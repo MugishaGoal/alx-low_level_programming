@@ -8,7 +8,7 @@
 /**
  * main - Prints the alphabetic
  *
- * Result: Always (Success)
+ * Return: Always (Success)
  *
  */
 
