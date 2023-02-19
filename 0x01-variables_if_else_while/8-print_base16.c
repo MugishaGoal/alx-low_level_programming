@@ -20,7 +20,7 @@ int main(void)
 
 	for (n = '0'; n <= '9'; n++)
 	putchar(n);
-	for (low = 'a'; low <= 'o'; low++)
+	for (low = 'a'; low <= 'f'; low++)
 	putchar(low);
 	putchar('\n');
 
