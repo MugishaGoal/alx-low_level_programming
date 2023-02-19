@@ -11,12 +11,14 @@
  *
  */
 
+int main(void)
+
 {
 
 	int n;
 	char low;
 
-	for (n = '0'; n <= '9'; l++)
+	for (n = '0'; n <= '9'; n++)
 	putchar(n);
 	for (low = 'a'; low <= 'o'; low++)
 	putchar(low);
