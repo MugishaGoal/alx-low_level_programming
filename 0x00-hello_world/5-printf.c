@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - prints "with proper grammar, but the outcome is a piece of art,"
+ * main - prints value with proper grammar, but the outcome is a piece of art,
  *
  * Retuns: Always 0.
  *
@@ -10,7 +10,7 @@
 int main(void)
 
 {
-	printf("with proper grammar, but the outcome is a piece of art,\n");
+	printf("This program prints exactly with proper grammar, but the outcome is a piece of art,\n");
 
 	return (0);
 
