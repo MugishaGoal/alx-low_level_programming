@@ -1,20 +1,19 @@
 #include "main.h"
 
 /**
- * print the alphabet in lowercase - Make the alphabet
+ * print_alphabet - prints the lowercase alphabet followed by a new line
  *
- * Return: 0
- *
+ * Description: Prints the alphabet
+ *              in ascending order, followed by a newline character.
+ *              Uses the _putchar function to print each character.
  */
-
 void print_alphabet(void)
-
 {
-	char c;
-
-	for (c = 'a'; c <= 'z'; c++)
-	{
-	_putchar(c);
-	}
-	_putchar('\n');
+    char letter = 'a';
+    while (letter <= 'z')
+    {
+        _putchar(letter);
+        letter++;
+    }
+    _putchar('\n');
 }
