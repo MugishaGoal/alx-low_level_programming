@@ -1,22 +1,22 @@
 #include "main.h"
 
 /**
- * integer - computes the absolute value of an integer
+ * _abs - computes the absolute value of an integer
  * @n: the number to be checked
  * Return: negative or postive value
  *
  */
 
-int _abs(int n)
+int _abs(int)
 
 {
 	if (n < '0')
 	{
-	return -n;
+	return (-n);
 	}
 	else
 	{
-	return n;
+	return (n);
 	}
 
 }
