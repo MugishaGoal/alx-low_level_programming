@@ -1,14 +1,17 @@
 #include "main.h"
 
+#include <unistd.h>
 
-void print_numbers(void)
+/**
+ * _putchar - writes the character c to stout
+ * @c: the character to print
+ *
+ * Return: 1 on Success, -1 otherwise and is set appropriately
+ *
+ */
+
+int _putchar(char c)
 
 {
-	int i;
-	
-	for (i = 0; i < 10; i++)
-	{
-        _putchar(i + '0');
-	}
-	_putchar('\n');
+	return (write(1, &c, 1));
 }
