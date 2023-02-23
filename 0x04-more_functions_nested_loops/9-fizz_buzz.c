@@ -32,7 +32,5 @@ int main(void)
 	printf("%d ", x);
 	}
 	printf("\n");
-
 	return (0);
-
 }
