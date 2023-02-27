@@ -5,7 +5,6 @@
  * the value it points to to 98
  *
  * @n: An integer input pointer
- * 
  * Return: void
  *
  */
