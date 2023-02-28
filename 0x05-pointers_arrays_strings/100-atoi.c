@@ -8,52 +8,36 @@
  *
  * @s: the string to convert
  *
- * Return: The integer value of the string
+ * Return: The integer value of string
  *
  */
 
 int _atoi(char *s)
 
 {
-	int result = 0;
-	int sign = 1;
-	int i = 0;
+	int c = 0;
+	unsigned int ni = 0;
+	int min = 1;
+	int isi = 0;
 
-	while (s[i] == ' ' || s[i] == '\t' || s[i] == '\n' || s[i] == '\r' || s[i] == '\f' || s[i] == '\v')
+	while (s[c])
 	{
-	i++;
-	}
-	if (s[i] == '-')
+	if (s[c] == 45)
 	{
-	sign = -1;
-	i++;
+	min *= -1;
 	}
-	else if (s[i] == '+')
+	while (s[c] >= 48 && s[c] <= 57)
 	{
-	sign = 1;
-	i++;
+	isi = 1;
+	ni = (ni * 10) + (s[c] - '0');
+	c++;
 	}
-	while (s[i] >= '0' && s[i] <= '9')
+	if (isi == 1)
 	{
-	int digit = s[i] - '0';
-
-	if (result > (INT_MAX / 10))
-	{
-	return (sign == -1 ? INT_MIN : INT_MAX);
+	break;
 	}
-	else if (result == (INT_MAX / 10))
-	{
-	if (sign == -1 && digit > 8)
-	{
-	return (INT_MIN);
+	c++;
 	}
-	else if (sign == 1 && digit > 7)
-	{
-	return (INT_MAX);
-	}
-	}
-	result = result * 10 + digit;
-	i++;
-	}
-	return (sign * result);
+	ni *= min;
+	return (ni);
 }
