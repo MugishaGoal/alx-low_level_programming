@@ -5,11 +5,12 @@
 /*
  * print_array - prints n elements of an array of integers,
  * followed by a new line
- * @a: Array of integers
+ *
+ * @a: Pointer to the integer array to print
  * @n: Number of elements of the array to be printed
- * Return: void
  *
  */
+
 
 void print_array(int *a, int n)
 
