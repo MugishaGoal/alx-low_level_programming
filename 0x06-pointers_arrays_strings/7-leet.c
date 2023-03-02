@@ -2,29 +2,26 @@
 
 /**
  * leet - encodes a string into 1337
- * @str: string to encode
- * Return: str
+ * @n: input value
+ * Return: n
  */
 
-char *leet(char *str)
+char *leet(char *n)
 
 {
-	char *s = str;
-	char leet_dict[256] = {0};
 	int i, j;
-	const char *letters = "aAeEoOtTlL";
-	const char *codes = "4433007711";
+	char s1[] = "aAeEoOtTlL";
+	char s2[] = "4433007711";
 
-	for (i = 0; letters[i] != '\0'; i++)
+	for (i = 0; n[i] != '\0'; i++)
 	{
-	leet_dict[(int)letters[i]] = codes[i];
-	}
-	while (*s)
+	for (j = 0; j < 10; j++)
 	{
-	j = (int)*s;
-	if (leet_dict != 0)
-	*s = leet_dict[j];
+	if (n[i] == s1[j])
+	{
+	n[i] = s2[j];
 	}
-	s++;
-	return (str);
+	}
+	}
+	return (n);
 }
