@@ -1,33 +1,33 @@
 #include "main.h"
 
 /**
- * _strpn - gets the length of prefix substring
+ * _strspn - calculates the length of the initial segment of a string
  * @s: input string
  * @accept: characters to match
  *
- * Return: number of bytes in the initial segment s
+ * Return: Always 0 (Success)
  *
  */
 
 unsigned int _strspn(char *s, char *accept)
 
 {
-	unsigned int i, j, len = 0;
+	unsigned int n = 0;
+	int j;
 
-	for (i = 0; s[i]; i++)
+	while (*s)
 	{
 	for (j = 0; accept[j]; j++)
 	{
-	if (s[i] == accept[j])
+	if (*s == accept[j])
 	{
-	len++;
+	n++;
 	break;
 	}
+	else if (accept[j + 1] == '\0')
+	return (n);
 	}
-	if (!accept[j])
-	{
-	return (len);
+	s++;
 	}
-	}
-	return (len);
+	return (n);
 }
