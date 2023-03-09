@@ -4,6 +4,7 @@
 /**
  * is_prime_number -  returns if the input integer is a prime number
  * @n: the number to be checked
+ * @i: input value
  * Return: integer value
  */
 
@@ -22,7 +23,7 @@ int is_prime_number(int n)
 /**
  * check_prime - check if a number is prime
  * @n: the number to be checked
- * @i: the iteration times
+ * @i: input value
  *
  * Return: 1 for prime, otherwise 0
  */
