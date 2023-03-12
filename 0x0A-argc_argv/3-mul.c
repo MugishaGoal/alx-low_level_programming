@@ -5,14 +5,15 @@
  * main - multiplies two numbers
  * @argc: counts the number of arguments
  * @argv: an array of the string
- * Return: 0 Always (Success)
+ * Return: 0 Always (Success), if the  prgram does not receive two arguments
+ * print error and return 1
  */
 
 int main(int argc, char **argv)
 {
 	int num1, num2, result;
 
-	if (argc != 2)
+	if (argc != 3)
         {
         printf("Error\n");
         }
