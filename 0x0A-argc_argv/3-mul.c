@@ -1,3 +1,4 @@
+#include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -5,8 +6,7 @@
  * main - multiplies two numbers
  * @argc: counts the number of arguments
  * @argv: an array of the string
- * Return: 0 Always (Success), if the  prgram does not receive two arguments
- * print error and return 1
+ * Return: 0
  */
 
 int main(int argc, char **argv)
@@ -18,9 +18,9 @@ int main(int argc, char **argv)
 	result = num1 * num2;
 	printf("%d\n", result);
 	return (0);
-	if (argc != 3)
-        {
-        printf("Error\n");
-        }
-        return (1);
+	if (argc == 3)
+	{
+	printf("Error\n");
+	}
+	return (1);
 }
