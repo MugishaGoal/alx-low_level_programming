@@ -4,28 +4,28 @@
 
 /**
  * _calloc - allocates memory for an array
- * @nmemb: input value
+ * @nmemb: allocate memory for an array
  * @size: number of bytes
- * Return: void
+ * Return: pointer to the allocated memory
  */
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	char *ptr;
+	char *p;
 	unsigned int i;
 
 	if (nmemb == 0 || size == 0)
 	{
 	return (NULL);
 	}
-	ptr = malloc(nmemb * size);
-	if (ptr == NULL)
+	p = malloc(nmemb * size);
+	if (p == NULL)
 	{
 	return (NULL);
 	}
-	for (i = 0; i < nmemb * size; i++)
+	for (i = 0; i < (nmemb * size); i++)
 	{
-	ptr[i] = 0;
+	p[i] = 0;
 	}
-	return (ptr);
+	return (p);
 }
