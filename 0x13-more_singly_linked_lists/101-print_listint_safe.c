@@ -11,23 +11,20 @@
 
 size_t print_listint_safe(const listint_t *head)
 {
-	const listint_t *current, *prev;
-	size_t c = 0;
+	const listint_t *current = head, *previous = NULL;
+	size_t nodes = 0;
 
-	if (head == NULL)
-		exit(98);
-	current = head;
-	prev = NULL;
 	while (current != NULL)
 	{
-		c++;
 		printf("[%p] %d\n", (void *)current, current->n);
-		if (current < prev)
-			break;
-		prev = current;
+		nodes++;
+		if (current < previous)
+		{
+			printf("-> [%p] %d\n", (void *)current, current->n);
+			exit(98);
+		}
+		previous = current;
 		current = current->next;
 	}
-	if (current != NULL)
-		printf("-> [%p] %d\n", (void *)current, current->n);
-	return (c);
+	return (nodes);
 }
