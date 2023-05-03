@@ -9,7 +9,7 @@
  */
 void print_char(va_list args)
 {
-	printf("%c",va_arg(args, int));
+	printf("%c", va_arg(args, int));
 }
 
 /**
@@ -72,7 +72,7 @@ void print_all(const char * const format, ...)
 			{
 				printf("%s", separator);
 				print_funcs[j].print_func(args);
-				separator = ", ";
+				
 				break;
 			}
 			j++;
