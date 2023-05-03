@@ -1,8 +1,11 @@
 #include <stdio.h>
 
-/*
- * main - Prints the name
- * Return: 0
+/**
+ * main - Entry point of the program written
+ *
+ * Description: Prints the name of the file it was compiled from,
+ * followed by a new line
+ * Return: Void
  */
 
 int main(void)
