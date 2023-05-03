@@ -6,6 +6,7 @@
  * _realloc - reallocates a memory block
  * @new_size: the new size, in bytes of the new memory block
  * @old_size: the size for the allocated space
+ * @ptr: is a pointer
  * Return: pointer allocate  the new size, or NULL
  */
 

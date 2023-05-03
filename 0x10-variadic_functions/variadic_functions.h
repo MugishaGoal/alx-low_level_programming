@@ -6,7 +6,7 @@
 /**
  * struct print_func - A structure to store the print function
  * @type: A character representing the type of data
- * @func: A function pointer to the corresponding print function
+ * @print_func: A function pointer to the corresponding print function
  */
 typedef struct print_func
 {
