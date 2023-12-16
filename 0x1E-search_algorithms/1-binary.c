@@ -19,7 +19,7 @@ void print_array(int *array, size_t l, size_t r)
 	}
 }
 /**
- * binary_search_index - Search for a value in a sorted array using binary search.
+ * binary_search_index - Search for a value in a sorted array
  *
  * @array: Pointer to the array to search in.
  * @l: Left index of the array.
